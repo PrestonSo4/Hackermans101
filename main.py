@@ -1,7 +1,9 @@
-import selenium, time, pyautogui, webbrowser, random
+import selenium, time, pyautogui, webbrowser, random, getpass, win32api, win32con
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from getpass import getpass
+def pClick(): #I created this function because it's faster than >>>pygautogui.click()
+    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0) #MAKE SURE YOU HAVE WIN32API INSTALLED. Type: >pip install pywin32
+    time.sleep(0.01)
+    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
 email = 's-sop@bsd405.org' #                       --If you are just spamming, put in ur BSD email here *I make this for ease of access
 #email = input('Enter your email: ')= ''           --This is replace this for the line above
 psswrd = input('Enter your password: ')
@@ -15,21 +17,22 @@ nextMS = driver.find_element_by_id('idSIButton9')
 nextMS.click()
 psswrdMS = driver.find_element_by_id('i0118')
 psswrdMS.send_keys(psswrd)
-pyautogui.moveTo(545, 652, duration=1, tween=pyautogui.easeInOutQuad)
+pyautogui.moveTo(545, 652, duration=1, tween=pyautogui.easeInOutQuad)# Makesure you have Pyautogui installed. Type: >pip install pyautogui
 #You may need to change ur coords 
 print('moved to!')
 time.sleep(1)
-pyautogui.click()
-time.sleep(1.5)
-pyautogui.click()
+pClick()
+time.sleep(2)
+pClick()
 print('clicked!')
 time.sleep(3)
 driver.get('https://flipgrid.com/0d4b1f77')
 move = pyautogui.moveTo(545, 932, duration=1, tween=pyautogui.easeInOutQuad)
 for i in range(1000000):
     driver.get('https://flipgrid.com/0d4b1f77')
-    time.sleep(0.7)
-    move if pyautogui.position() != (545, 932) else random.randint(1,2)
+    time.sleep(0.6)#buffer for page to load
+    if pyautogui.position() != (545, 932):
+        move
     #You may need to change ur coords 
-    pyautogui.click()
+    pClick()
 driver.close()
