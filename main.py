@@ -28,10 +28,9 @@ print('clicked!')
 time.sleep(3)
 driver.get('https://flipgrid.com/0d4b1f77')
 move = pyautogui.moveTo(545, 932, duration=1, tween=pyautogui.easeInOutQuad)
-for i in range(10):
+for i in range(1000000):
     driver.get('https://flipgrid.com/0d4b1f77')
-    #time.sleep(0.08)
-    move if pyautogui.position() != (545, 932) else print()
+    time.sleep(0.7)
+    move if pyautogui.position() != (545, 932) else random.randint(1,2)
     pyautogui.click()
-    
 driver.close()
