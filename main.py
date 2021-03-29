@@ -37,12 +37,14 @@ for i in range(1000000):
     #You may need to change ur coords. Use coordFinder.py to find ur coords for ur OS. -Preston 👍
     pClick()
     """
-    pyautogui.moveTo(585, 910, duration=0, tween=pyautogui.easeInOutQuad)
+    pyautogui.moveTo(585, 910, duration=0, tween=pyautogui.easeInOutQuad) #First like box (Asher's)
     pClick()
-    pyautogui.moveTo(872, 910, duration=0, tween=pyautogui.easeInOutQuad)
+    pyautogui.moveTo(872, 910, duration=0, tween=pyautogui.easeInOutQuad) #Second like box (Laura Walter's)
     pClick()
-    pyautogui.moveTo(1142, 910, duration=0, tween=pyautogui.easeInOutQuad)
+    pyautogui.moveTo(1142, 910, duration=0, tween=pyautogui.easeInOutQuad) #Third like box (Zaeemah's)
     pClick()
-    pyautogui.moveTo(1422, 910, duration=0, tween=pyautogui.easeInOutQuad)
+    pyautogui.moveTo(1422, 910, duration=0, tween=pyautogui.easeInOutQuad) #Fourth like box (Zaeemah's Example)
     pClick()
+    #"""
+    #If you want to like only one box, just comment out lines 40-47 and replace the likeX and likeY coords to the box's respective coords.
 driver.close()
