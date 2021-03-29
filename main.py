@@ -6,7 +6,7 @@ def pClick(): #I created this function because it's faster than >>>pygautogui.cl
     time.sleep(0.0001)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
 email = 's-sop@bsd405.org' #                       --If you are just spamming, put in ur BSD email here *I make this for ease of access
-#email = input('Enter your email: ')= ''           --This is replace this for the line above
+#email = input('Enter your email: ')               --This is replace this for the line above
 psswrd = input('Enter your password: ')
 #psswrd = getpass('Enter your password: ') #       --USE THIS IF UR SHARING UR SCREEN OR SHOWING FRIENDS. FOR TESTING, USE THE LINE ABOVE SO YOU CAN CHECK UR PSSWORD AND SAVE TIME
 driver = webdriver.Chrome()
