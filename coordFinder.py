@@ -9,10 +9,11 @@ while True:
 
 #My coords:
 #   --Sign-in button: (1042, 648)
-#   --1st vid like button: (580, 890)
-#   --2nd vid like button: (872, 890)
-#   --3rd vid like button: (1142, 890)
-#   --4th vid like button: (1422, 890)
+#   --1st vid like button: (580, 90) 
+#   --2nd vid like button: (872, 910)
+#   --3rd vid like button: (1142, 910)
+#   --4th vid like button: (1422, 910)
+# NOTE: You may also want to add roughly 10-20 pixels extra on the Y-Coord b/c the message below the search bar
 #...
 #...
 #...
