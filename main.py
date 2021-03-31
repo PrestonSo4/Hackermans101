@@ -9,7 +9,7 @@ def pClick(): #I created this function because it's faster than >>>pygautogui.cl
 email = 's-sop@bsd405.org' #                       --If you are just spamming, put in ur BSD email here *I make this for ease of access
 #email = input('Enter your email: ')               --This is replace this for the line above
 #psswrd = input('Enter your password: ')
-psswrd = getpass('Enter your password: ') #       --USE THIS IF UR SHARING UR SCREEN OR SHOWING FRIENDS. FOR TESTING, USE THE LINE ABOVE SO YOU CAN CHECK UR PSSWORD AND SAVE TIME
+psswrd = getpass('Enter your password: ') #        --USE THIS IF UR SHARING UR SCREEN OR SHOWING FRIENDS. FOR TESTING, USE THE LINE ABOVE SO YOU CAN CHECK UR PSSWORD AND SAVE TIME
 driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get('https://login.microsoftonline.com/common/oauth2/v2.0/authorize?response_type=code&response_mode=query&client_id=f1143447-b07a-4557-b878-b78df8d45c13&redirect_uri=https://flipgrid.com/auth/sso&scope=User.Read&prompt=select_account&state=eyJyZWRpcmVjdF90byI6Ii8wZDRiMWY3Nz9yZW1lbWJlcj10cnVlIiwicHJvdmlkZXIiOiJtaWNyb3NvZnQiLCJyZW1lbWJlcl9tZSI6dHJ1ZSwidG9waWNfaWQiOjIxMTY1OTQwfQ==&sso_reload=true')
